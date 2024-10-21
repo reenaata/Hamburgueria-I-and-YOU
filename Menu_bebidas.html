@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Bebidas - Hamburgueria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:coral;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #d9534f;
+        }
+        .menu {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            padding: 20px;
+        }
+        .bebida {
+            margin: 15px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .bebida:last-child {
+            border-bottom: none;
+        }
+        .nome {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .preco {
+            color: #5cb85c;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menu de Bebidas</h1>
+    <div class="menu">
+        <div class="bebida">
+            <div class="nome">Coca-Cola</div>
+            <div class="preco">R$ 5,00</div>
+        </div>
+        <div class="bebida">
+            <div class="nome">Guaraná Antarctica</div>
+            <div class="preco">R$ 5,00</div>
+        </div>
+        <div class="bebida">
+            <div class="nome">Fanta Laranja</div>
+            <div class="preco">R$ 5,00</div>
+        </div>
+        <div class="bebida">
+            <div class="nome">Água Mineral</div>
+            <div class="preco">R$ 3,00</div>
+        </div>
+        <div class="bebida">
+            <div class="nome">Suco Natural</div>
+            <div class="preco">R$ 7,00</div>
+        </div>
+        <div class="bebida">
+            <div class="nome">Cerveja Lata</div>
+            <div class="preco">R$ 8,00</div>
+        </div>
+    </div>
+    <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="hamburguer">Escolha seu Pedido:</label>
+            <select id="hamburguer" name="hamburguer" required>
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Guaraná Antarctica">Guaraná Antarctica</option>
+                <option value="vegano">Vegano</option>
+                <option value="Hambúrguer de Picanha">Hambúrguer de Picanha</option>
+                <option value="Batata Frita"> Batata Frita</option>
+                <option value="Batata Frita">Hambúrguer de Picanha</option>
+            </select>
+</body>
+</html>

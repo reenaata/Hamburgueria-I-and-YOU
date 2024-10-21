@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hamburguer.css">
+</head>
+<body>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Hambúrguer Clássico - R$20,00</li>
+            <li>Cheeseburguer - R$25,00</li>
+            <li>Hambúrguer Vegano - R$22,00</li>
+            <li>Hambúrguer de Picanha - R$30,00</li>
+            <li>Refrigerante - R$7,00</li>
+            <li>Sucos Naturais - R$8,50</li>
+            <li> Cervejas Artesanais - R$15,00</li>
+            <li> BBQ Bacon  - R$20,99</li>
+            <li> Spicy Chicken- R$17,90</li>
+            <li>Mushroom & Swiss - R$19,99</li>
+            <li>Hawaian Burger - R$18,99</li>
+            <li>Batata Frita - R$15,00</li>
+
+
+
+        </ul>
+    </section>
+
+    <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="hamburguer">Escolha seu Pedido:</label>
+            <select id="hamburguer" name="hamburguer" required>
+                <option value="classico">Clássico</option>
+                <option value="cheeseburguer">Cheeseburguer</option>
+                <option value="vegano">Vegano</option>
+                <option value="Hambúrguer de Picanha">Hambúrguer de Picanha</option>
+                <option value="Batata Frita"> Batata Frita</option>
+                <option value="Batata Frita">Hambúrguer de Picanha</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hamburgueria I and YOU</p>
+    </footer>
+    <script>
+    <button class="botao" onclick="alert('Botão clicado!')">Menu 2</button>
+    </script>
+</body>
+</html>
