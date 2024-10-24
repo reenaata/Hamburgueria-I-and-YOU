@@ -27,7 +27,7 @@
         .bebida {
             margin: 15px 0;
             padding: 10px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #f18c64;
         }
         .bebida:last-child {
             border-bottom: none;
@@ -48,23 +48,23 @@
     <div class="menu">
         <div class="bebida">
             <div class="nome">Coca-Cola</div>
-            <div class="preco">R$ 5,00</div>
+            <div class="preco">R$ 7,00</div>
         </div>
         <div class="bebida">
             <div class="nome">Guaraná Antarctica</div>
-            <div class="preco">R$ 5,00</div>
+            <div class="preco">R$ 6,00</div>
         </div>
         <div class="bebida">
             <div class="nome">Fanta Laranja</div>
-            <div class="preco">R$ 5,00</div>
+            <div class="preco">R$ 6,50</div>
         </div>
         <div class="bebida">
             <div class="nome">Água Mineral</div>
-            <div class="preco">R$ 3,00</div>
+            <div class="preco">R$ 4,00</div>
         </div>
         <div class="bebida">
             <div class="nome">Suco Natural</div>
-            <div class="preco">R$ 7,00</div>
+            <div class="preco">R$ 8,50</div>
         </div>
         <div class="bebida">
             <div class="nome">Cerveja Lata</div>
@@ -81,10 +81,16 @@
             <select id="hamburguer" name="hamburguer" required>
                 <option value="Coca-Cola">Coca-Cola</option>
                 <option value="Guaraná Antarctica">Guaraná Antarctica</option>
-                <option value="vegano">Vegano</option>
-                <option value="Hambúrguer de Picanha">Hambúrguer de Picanha</option>
-                <option value="Batata Frita"> Batata Frita</option>
-                <option value="Batata Frita">Hambúrguer de Picanha</option>
+                <option value="Fanta Laranja">Fanta Laranja</option>
+                <option value="Fanta Uva"> Fanta Uva</option>
+                <option value="Água Mineral">Água Mineral</option>
+              
             </select>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
 </body>
 </html>
